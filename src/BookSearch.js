@@ -8,6 +8,7 @@ class BookSearch extends Component {
         searchResult: [],
         searchString: "", 
     }
+<<<<<<< HEAD
     
     search = async event=>{
       const searchString = event.target.value;
@@ -33,6 +34,19 @@ class BookSearch extends Component {
     //       // if query is empty clear the state search result
     //     } else this.setState({ searchResult: []});
     //   }
+=======
+    search = event => {    
+      this.setState({searchString: event.target.value});
+        //Taking input from user
+        if (this.state.searchString) {
+          BooksAPI.search(this.state.searchString).then((b) => {
+            this.setState({searchResult: b});
+          }
+          );
+          // if query is empty clear the state search result
+        } else this.setState({ searchResult: []});
+      }
+>>>>>>> 5deec39be033b5c3924ff6d773bfeac923867422
     render() {
         return (
             <div className="search-books">

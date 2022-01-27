@@ -1,6 +1,15 @@
 {
 	"folders": [
 		{
+<<<<<<< HEAD
+=======
+			"path": "..\\reactnd-contacts-app"
+		},
+		{
+			"path": "..\\reactnd-contacts-server2"
+		},
+		{
+>>>>>>> 5deec39be033b5c3924ff6d773bfeac923867422
 			"path": "."
 		}
 	],
